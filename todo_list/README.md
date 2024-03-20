@@ -22,3 +22,7 @@ La aplicación incluye validaciones para evitar agregar tareas vacías.
 ## Eliminación de tareas
 
 Utiliza una función para eliminar una tarea en específico.
+
+## Editar Tareas
+
+Utiliza una función para poder editar una tarea en específico
