@@ -1,80 +1,97 @@
+/* Estilos para el encabezado */
 h1 {
-    text-align: center;
-    font-family:Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
-  }
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+  font-style: italic;
+  color: #333; /* Cambiar el color del texto según tu preferencia */
+}
 
-  body {
-    background: grey
-  }
-  #todo-list {
-    width: 500px;
-    margin: 60px auto;
-  }
-  form, .todo {
-    border: 1px solid rgb(15, 26, 61);
-    padding: 10px 20px;
-    margin-bottom: 10px;
-  }
-  form {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
-  }
-  form input {
-    padding: 4px 8px;
-    flex-grow: 1;
-    margin-right: 16px;
-  }
-  .todo {
-    display: flex;
-    flex-direction: column;
-  }
-    
-  button {
-    font-size: 16px;
-    background-color: rgb(62, 138, 151);
-    color: #fff;
-    border-radius: 8px;
-    border: none;
-    padding: 8px 16px;
-    cursor: pointer;
-  }
-  button:hover {
-    background-color: rgb(173, 47, 28);
-  }
-  button:active {
-    background-color: rgb(130,35,21);
-  }
-  button:focus {
-    outline: 0;
-  }
-  input[type='text'] { font-size: 20px; font-family: monospace; }
-  .todo input[type="checkbox"] {
-    transform: scale(1.8) translateY(1px);
-    margin: 0 16px 0 0;
-    cursor: pointer;
-  }
-  .todo-text input {
-    padding: 4px;
-  }
-  .todo-text {
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 1cm;
-    display: flex;
-    align-self: center;
-  }
-  .todo-completed {
-    display: flex;
-    margin: 10px 0;
-  }
-  .todo-actions {
-    display: flex;
-    justify-content: space-between;
-  }
+/* Estilos para el cuerpo de la página */
+body {
+  background: #f7f7f7; /* Cambiar el color de fondo según tu preferencia */
+  font-family: 'Arial', sans-serif;
+}
 
-  #completed {
-    margin-left: 15px;
-  }
+/* Estilos para la lista de tareas */
+#todo-list {
+  width: 80%; /* Cambiar el ancho según tu preferencia */
+  max-width: 500px; /* Establecer un ancho máximo */
+  margin: 60px auto;
+}
 
+/* Estilos para el formulario y las tareas */
+form, .todo {
+  border: 1px solid #ddd; /* Cambiar el color del borde según tu preferencia */
+  border-radius: 8px; /* Agregar bordes redondeados */
+  padding: 20px;
+  margin-bottom: 20px;
+  background: #fff; /* Cambiar el color de fondo según tu preferencia */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Agregar sombra */
+}
+
+/* Estilos para el formulario */
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form input[type='text'] {
+  flex-grow: 1;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc; /* Cambiar el color del borde según tu preferencia */
+  border-radius: 4px; /* Agregar bordes redondeados */
+}
+
+/* Estilos para los botones */
+button {
+  font-size: 16px;
+  background-color: #007bff; /* Cambiar el color de fondo según tu preferencia */
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Cambiar el color al pasar el mouse */
+}
+
+button:active {
+  background-color: #004080; /* Cambiar el color al hacer clic */
+}
+
+button:focus {
+  outline: none; /* Eliminar el contorno al enfocar */
+}
+
+/* Estilos para las tareas */
+.todo {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.todo-text {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.todo-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todo-completed {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+#completed {
+  margin-left: 10px;
+}
